@@ -178,10 +178,23 @@ svg{
 .container__footer{
     background-color: var(--black);
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    text-align: center;
 }
 .svg__contact{
     height: 4rem;
     max-width: 5rem;
-    padding: 2rem;
+    padding: .5rem;
+}
+@media(min-width: 768px){
+    .svg__contact{
+        height: 4rem;
+        max-width: 5rem;
+        padding: 2rem;
+    }
+    .container__footer{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
 }
